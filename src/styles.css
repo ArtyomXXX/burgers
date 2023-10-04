@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -19,14 +20,10 @@ body {
   color: #FFFFFF;
 }
 
-.page {
-  overflow: hidden;
-}
-
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .button {
@@ -63,4 +60,31 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 560px) {
+  .common-title {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .container {
+    padding: 5px;
+  }
+
+  .common-title {
+    font-size: 20px;
+  }
 }
