@@ -315,7 +315,7 @@
   .main-image {
     width: 900px;
     height: 100%;
-    top: 0px;
+    top: -80px;
     left: calc(590 / 1920 * 100%);
   }
 
@@ -365,7 +365,10 @@
   }
 
   .main-image {
-    display: none;
+    width: 600px;
+    position: absolute;
+    top: -130px;
+    left: 80px;
   }
 }
 
@@ -411,6 +414,10 @@
 }
 
 @media screen and (max-width: 455px) {
+  .main-image {
+    left: 0px;
+  }
+
   .order-form {
     padding: 30px 20px;
   }
@@ -515,6 +522,11 @@
     font-size: 15px;
     line-height: 1.2;
     margin-bottom: 30px;
+  }
+
+  .main-image {
+    top: 0px;
+    left: -40px;
   }
 
   .why {
